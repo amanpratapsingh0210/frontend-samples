@@ -55,3 +55,13 @@ function clrButton() {
     document.getElementById('val2').value = ''
     document.getElementById('res').innerHTML = ''
 }
+function mod(){
+    let v1 = Number(valInput1())
+    let v2 = Number(valInput2())
+    document.getElementById('res').innerHTML = v1 % v2
+}
+function percent(){
+    let v1 = Number(valInput1())
+    let v2 = Number(valInput2())
+    document.getElementById('res').innerHTML = (v1 / v2) * 100,"%"
+}
