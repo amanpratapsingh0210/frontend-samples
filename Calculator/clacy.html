@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcy-style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <script src="calcy-script.js"></script>
+    <form action="" method="get">
+        <div align = "center">
+        <table id="regFormTable" border="4" cellspacing="3" cellpadding="5">
+            <caption>Student Data</caption>
+            <tr>
+                <td id="sfElements" colspan="2">Value1:</td>
+                <td colspan="2"><input type="number" id="val1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="sfElements">Value2:</td>
+                <td colspan="2"><input type="number" id="val2"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Output:</td>
+                <td colspan="2"><b><span id="res"></b></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick = "add()">+</button></td>
+                <td><button type="button" onclick = "subtract()">-</button></td>
+                <td><button type="button" onclick = "multiply()">*</button></td>
+                <td><button type="button" onclick = "divide()">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="sq()" ondblclick="cu()">^2/^3(Value1)</button></td>
+                <td><button type="button" onclick="sqRoot()" ondblclick="cqRoot()">SQRT/CQRT (Value1)</button></td>
+                <td><button type="button" onclick="pow()">Power</button></td>
+                <td><button type="button" onclick="ansButton()">Ans</button></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button id="clr" type="button" onclick="clrButton()">Clear All Fields</button></td>
+            </tr>
+        </table>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.l1{
+    height: max-content;
+    width: max-content;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px;
+    
+}
+
+.l0{
+    height: max-content;
+    width: max-content;
+    border: 2px solid black;
+}
+
+.l2{
+    height: 150px;
+    width: 150px;
+    margin: 5px ;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#r{
+    background-color: red;
+}
+#y{
+    background-color: yellow;
+}
+#g{
+    background-color: green;
+}
+
+#regFormTable{
+    font-style: normal; 
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 115, 12);
+    text-align: center;
+}
+
+button{
+    height: fit-content;
+    width: 100px;
+}
+
+#clr{
+    height: fit-content;
+    width: 450px;
+}
