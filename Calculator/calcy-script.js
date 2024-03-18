@@ -53,5 +53,5 @@ function ansButton() {
 function clrButton() {
     document.getElementById('val1').value = ''
     document.getElementById('val2').value = ''
-    document.getElementById('res').innerHTML = 'Blank'
+    document.getElementById('res').innerHTML = ''
 }
