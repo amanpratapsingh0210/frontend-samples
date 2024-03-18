@@ -1,3 +1,9 @@
+body {
+  background-image: url("wp9118796-digital-painting-4k-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .l1{
     height: max-content;
     width: max-content;
