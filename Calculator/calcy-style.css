@@ -57,3 +57,7 @@ button:hover{
     height: fit-content;
     width: 225px;
 }
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
