@@ -15,7 +15,7 @@ body {
 }
 
 #val1,#val2 {
-    width:96%
+    width:fit-content;
 }
 
 button{
