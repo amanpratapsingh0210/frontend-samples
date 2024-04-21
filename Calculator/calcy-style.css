@@ -1,5 +1,5 @@
 body {
-  background-image: url("C:/GitHub Repositories/frontend-samples/Calculator/material/wp9118796-digital-painting-4k-wallpapers.jpg");
+  background-image: url("material/wp9118796-digital-painting-4k-wallpapers.jpg");
   background-repeat: no-repeat;
   background-attachment:fixed;
 }
@@ -17,6 +17,12 @@ body {
 #val1,#val2 {
     width:fit-content;
 }
+#history,#res {
+    min-width: 95%;
+    min-height: 12vmax;
+    font-weight: bold;
+}
+
 
 button{
     background-color: rgb(209, 209, 209);

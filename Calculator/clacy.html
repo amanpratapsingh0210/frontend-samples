@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calcy-style.css">
-    <link rel="icon" type="image/x-icon" href="images.png"></link>
+    <link rel="icon" type="image/x-icon" href="material\images.png"></link>
     <title>Calculator</title>
 </head>
 <body>
     <script src="calcy-script.js"></script>
-
-    <form action="" method="get">
-        <table id="regFormTable" border="4" cellspacing="3" cellpadding="5">
+    <div class="form1">
+    <table id="regFormTable" border="4" cellspacing="3" cellpadding="5">
+        <form action="" method="get">
             <caption style="margin-top: 50%;
             font-size: xx-large;
             border: 2px solid green;
@@ -19,9 +19,14 @@
             font-style: italic;
             font-weight: bolder;
             background-color: rgb(248, 240, 230);">Calculator</caption>
+            
             <tr>
                 <td id="sfElements" colspan="2">Value1:</td>
                 <td colspan="2"><input type="number" id="val1"></td>
+                <td style="min-width: 10vw;" rowspan="5" colspan="2" style="background-color: white;  text-align: center;">
+                <textarea name="" id="history" disabled></textarea>
+                <!-- <p id="history"></p> -->
+                </td>
             </tr>
             <tr>
                 <td colspan="2" id="sfElements">Value2:</td>
@@ -29,7 +34,7 @@
             </tr>
             <tr>
                 <td colspan="2">Output:</td>
-                <td colspan="2"><b><span id="res"></b></td>
+                <td colspan="2"><span id="res"></td>
             </tr>
             <tr>
                 <td><button type="button" onclick = "add()">+</button></td>
@@ -47,9 +52,11 @@
                 <td colspan="1"><button type="button" onclick="mod()">Modulus</button></td>
                 <td colspan="1"><button type="button" onclick="percent()">% (V1 of V2)</button></td>
                 <td colspan="2"><button id="clr" type="button" onclick="clrButton()">Clear All Fields</button></td>
+                <td colspan="2"><button id="clrhis" type="button" onclick="clrhis()">Clear History</button></td>
             </tr>
-        </table>
-    </form>
+        </form>   
+    </table>
+    </div>
 
 </body>
 </html>
