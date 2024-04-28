@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg-1.css">
+    <title>Student Registration form</title>
+</head>
+<body>
+    
+    <table>
+        <form action="" method="get">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname" id="fname" required></td>
+            </tr>
+            <tr>
+                <td>Sur Name:</td>
+                <td><input type="text" name="lname" id="sname" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob" id="dob" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><select name="sex" id="sex">
+                    <option value="blank">--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Trans">Transformer</option>
+                    <option value="Other">Delusional</option>
+                </select></td>    
+            </tr>
+
+            <tr>
+                <td>College name:</td>
+                <td><select name="college-name" id="c_name">
+                    <option value="blank">--</option>
+                    <option value="UCER">United College of Engineering and Research</option>
+                    <option value="UIT">United Institute of Technology</option>
+                    <option value="UIP">United Institute of Pharmacy</option>
+                    <option value="UIM">United Institute of Management</option>
+                    <option value="UIM-FUGS">United Institute of Management-Faculty of Graduate Studies</option>
+                </select></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Branch:</td>
+                    <td><select name="branch" id="branch">
+                        <option value="blank">--</option>
+                        <option value="B.Tech">Bachlors in Technology</option>
+                        <option value="M.Tech">Masters of Technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="ME">Mechanical Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="EC">Electronics and Communication Engineering</option>
+                        <option value="MCA">Master of Computer Application</option>
+                        <option value="MBA">Master of Business Administration</option>
+                        <option value="BCA">Bachlors in Computer Applications</option>
+                        <option value="BBA">Bachlors in Business Adminstration</option>
+                    </select></td>
+                </tr>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email" autocomplete="email"></td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="tel" name="mobile" id="mobile" placeholder="(optional)"></td>
+
+            <tr>
+                <td>Scholarship Applied:</td>
+                <td>
+                    No<input type="radio" name="s-ship" id="s-ship1" value="No">
+                    Yes<input type="radio" name="s-ship" id="s-ship2" value="Yes">
+                </td>
+            </tr>
+            <tr>
+                <td>Create Password:</td>
+                <td><input type="password" id="pass" name="pass"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number, one uppercase and lowercase letter, and be at least 8 characters long"
+                    placeholder="Enter New Pass" 
+                    required></td>
+            </tr>
+            <tr>
+                <td>Verify Password:</td>
+                <td><input type="password" name="v_pass" id="v_pass" placeholder="Re-enter pass" required></td>
+            </tr>
+            
+            <tr>
+                <td><button type="submit" onclick="registor()">Register</button></td>
+                <td><button type="button" onclick="display()">display</button></td>
+            </tr>
+        </form>
+    </table>
+    <p id="result"></p>
+    <script src="reg-1.js"></script>
+</body>
+</html>
