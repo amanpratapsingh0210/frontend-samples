@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reg-1.css">
+    <script src="reg-1.js"></script>
     <title>Student Registration form</title>
 </head>
 <body>
     
     <table>
-        <form action="" method="get">
+        <form action="" method="post">
             <tr>
                 <td>First Name:</td>
                 <td><input type="text" name="fname" id="fname" required></td>
@@ -74,13 +75,13 @@
                 <td>Mobile Number:</td>
                 <td><input type="tel" name="mobile" id="mobile" placeholder="(optional)"></td>
 
-            <tr>
+            <!-- <tr>
                 <td>Scholarship Applied:</td>
                 <td>
                     No<input type="radio" name="s-ship" id="s-ship1" value="No">
                     Yes<input type="radio" name="s-ship" id="s-ship2" value="Yes">
                 </td>
-            </tr>
+            </tr> -->
             <tr>
                 <td>Create Password:</td>
                 <td><input type="password" id="pass" name="pass"
@@ -95,12 +96,12 @@
             </tr>
             
             <tr>
-                <td><button type="submit" onclick="registor()">Register</button></td>
+                <td><button type="button" onclick="registor()">Register</button></td>
                 <td><button type="button" onclick="display()">display</button></td>
             </tr>
         </form>
     </table>
     <p id="result"></p>
-    <script src="reg-1.js"></script>
+    
 </body>
 </html>
